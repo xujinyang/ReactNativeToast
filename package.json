@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "reacttest",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "test",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react-native": "^0.14.2"
+  }
+}
