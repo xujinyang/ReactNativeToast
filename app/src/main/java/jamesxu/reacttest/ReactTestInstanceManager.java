@@ -14,7 +14,7 @@ public class ReactTestInstanceManager {
             sInstance = ReactInstanceManager.builder()
                     .setApplication((Application) ReactApplication.getContext())
                     .setBundleAssetName("index.android.bundle")
-                    .setJSMainModuleName("index.android")
+                    .setJSMainModuleName("reactjs/index.android")
                     .addPackage(new MainReactPackage())
                     .addPackage(new AnExampleReactPackage())
                     .setUseDeveloperSupport(BuildConfig.DEBUG)

@@ -1,7 +1,8 @@
 'use strict';
 
 var React = require('react-native');
-var To=require('SampleToast');
+var To=require('./SampleToast');
+var NativeParamManage=require('./NativeParamManage');
 var {
   Text,
   TouchableHighlight,
@@ -17,8 +18,13 @@ var MyAwesomeApp = React.createClass ({
     );
   },
     _onPressButton: function() {
-     To.show('测试',To.SHORT);
-    }
+     To.show("toast事件",To.SHORT);
+    },
+      componentDidMount: function() {
+         NativeParamManage.getParam((msg) => {
+            To.show(msg.name,To.SHORT);
+           });
+      },
 });
 var styles = React.StyleSheet.create({
   container: {

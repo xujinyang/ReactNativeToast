@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import jamesxu.reacttest.ReactModule.NativeParamModule;
 import jamesxu.reacttest.ReactModule.ToastModule;
 
 class AnExampleReactPackage implements ReactPackage {
@@ -21,6 +22,7 @@ class AnExampleReactPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
 
         modules.add(new ToastModule(reactContext));
+        modules.add(new NativeParamModule(reactContext));
 
         return modules;
     }
